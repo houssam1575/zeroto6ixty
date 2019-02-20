@@ -13,6 +13,6 @@ app.use('/assets/', express.static("./assets/"));
 app.use('/css/', express.static("./css/"));
 
 app.get("/", function(req, res) {
-  res.render("index");
+  res.render("welcome");
   console.log("redirected to /index.ejs");
 });

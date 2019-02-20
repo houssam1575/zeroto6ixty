@@ -2623,15 +2623,15 @@ fieldset:disabled a.btn {
 }
 
 .btn-light {
-  color: #212529;
-  background-color: #f8f9fa;
-  border-color: #f8f9fa;
+    color: #212529;
+    background-color: #ffffff;
+    border-color: #000000;
 }
 
 .btn-light:hover {
-  color: #212529;
-  background-color: #e2e6ea;
-  border-color: #dae0e5;
+  color: #ffffff;
+  background-color: #000000;
+  border-color: #ffffff;
 }
 
 .btn-light:focus, .btn-light.focus {
