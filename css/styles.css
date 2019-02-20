@@ -1,0 +1,9 @@
+.flex-rectangle:before{
+    content: "";
+    display: block;
+    padding-top: 6%;
+}
+.form-group {
+  background-color: transparent;
+  text-align:justify;
+}
