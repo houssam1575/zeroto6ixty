@@ -7,3 +7,6 @@
   background-color: transparent;
   text-align:justify;
 }
+img {
+  max-width: 40% !important;
+}
