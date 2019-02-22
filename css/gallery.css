@@ -1,52 +1,67 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:400,900);  /* <-- Just for the demo, Yes I like pretty fonts... */
-.img_1-1{background-image:url('https://farm4.staticflickr.com/3766/12953056854_b8cdf14f21.jpg');}
-.img_1-2{background-image:url('https://farm7.staticflickr.com/6092/6227418584_d5883b0948.jpg');}
-.img_1-3{background-image:url('https://farm8.staticflickr.com/7187/6895047173_d4b1a0d798.jpg');}
+@import url(http://fonts.googleapis.com/css?family=Lato:400,900);
+
+/* <-- Just for the demo, Yes I like pretty fonts... */
+.img_1-1 {
+  background-image: url('https://i.imgur.com/HZCUU2u.jpg');
+}
+
+.img_1-2 {
+  background-image: url('https://lh3.googleusercontent.com/zZu7dADerIWGKi-8tcd5LoU_o2OvxWBzTyWZ9xTDchwKNKxbU3hkRMZpSqIDfn_r5cI5k29gaJgHUq2nh7VsCqviOnGCCjKZbcwhnEhCui4ps4-_q-oP7Wf7L4SDA2otoVFfhK6MViZSkY0rjLRkSCMXqYBnuVQPBK56TORL3kp2s6m2aR2ttb6dacwoR1bI4gBRbJ2Yqm82WhUozmOMDOy5tOHC-8YpxO8tb3400F7IJ97f5XOq25b_ZPhllDxcr0YwEpW2DgLm1Y2RJpN1vc5_l2onUnBzp3mp_2jynLNkw-mc-2diG-LTs86DrZaHpDP4yNsoTOHNUqQw3tznE7TXF7ssbI9A93ijMZxswAuqfw9j-t4wfYC8DSULAFgyFfB0RAlHa9si-9Sd476hnxeWdR7uzPd1w57dmTT5guJQLyuONbvXl-msopEfc73P2cNA0_aYbFhxQW3Ry6VoQZLsXcQPMYAB4q5x_jPuEYzMEoJdERWptULCKnh9ulTRWyh13TIombFvWv8RVrz7jpD6KzWMJeZnHPojju7puJTZLI56H9TZek-piq0WcLB981BcwqHFCDn4SLlt2g-iHaF7UaZMfacr6iKQ9NIq6Q3hYGK4BRj-O6-ZSDWtm-zRMYW-ayL0aNXSuku9CteNxwRm7qxNzNJP=w3060-h2042-no');
+}
+
+.img_1-3 {
+  background-image: url('https://farm8.staticflickr.com/7187/6895047173_d4b1a0d798.jpg');
+}
 
 .square {
-    float:left;
-    position: relative;
-    width: 30%;
-    padding-bottom : 30%; /* = width for a 1:1 aspect ratio */
-    margin:1.66%;
-    background-position:center center;
-    background-repeat:no-repeat;
-    background-size:cover; /* you change this to "contain" if you don't want the images to be cropped */
+  float: left;
+  position: relative;
+  width: 30%;
+  padding-bottom: 30%;
+  /* = width for a 1:1 aspect ratio */
+  margin: 1.66%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  ;
+  /* you change this to "contain" if you don't want the images to be cropped */
 }
+
 body {
-    font-size:20px;
-    font-family: 'Lato',verdana, sans-serif;
-    color: #fff;
-    text-align:center;
-    background:#ECECEC;
+  font-size: 20px;
+  font-family: 'Lato', verdana, sans-serif;
+  color: black;
+  text-align: center;
+  background: white;
 }
 
 #bottom {
-    clear:both;
-    margin:0 1.66%;
-    width:89.68%;
-    padding: 3.5%;
-    background-color:#1E1E1E;
-    color: #fff;
-}
-#bottom p{
-    text-align:center;
-    line-height:2em;
-}
-#bottom a{
-    color: #000;
-    text-decoration:none;
-    border:1px solid #000;
-    padding:10px 20px 12px;
-    line-height:70px;
-    background:#ccc;
-
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
+  clear: both;
+  margin: 0 1.66%;
+  width: 89.68%;
+  padding: 3.5%;
+  background-color: #1E1E1E;
+  color: #fff;
 }
 
-#bottom a:hover{
-    background:#ECECEC;
-    border:1px solid #fff;
+#bottom p {
+  text-align: center;
+  line-height: 2em;
+}
+
+#bottom a {
+  color: #000;
+  text-decoration: none;
+  border: 1px solid #000;
+  padding: 10px 20px 12px;
+  line-height: 70px;
+  background: #ccc;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#bottom a:hover {
+  background: #ECECEC;
+  border: 1px solid #fff;
 }
