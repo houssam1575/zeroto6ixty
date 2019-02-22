@@ -37,7 +37,7 @@ html,body{
   border-radius: 50%;
 }
 .btnDiv {
-  left: 47.1%;
+  left: 36%;
   bottom: 10px;
   position: absolute;
 }
@@ -47,6 +47,15 @@ html,body{
   width: auto;
 }
 .fa-instagram:hover {
+  background: black;
+  color: white;
+}
+.fa-send {
+  background: white;
+  color: black;
+  width: auto;
+}
+.fa-send:hover {
   background: black;
   color: white;
 }
