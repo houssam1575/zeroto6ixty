@@ -28,3 +28,26 @@ html,body{
   background-repeat: no-repeat;
   background-size: cover;
 }
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+}
+.btnDiv {
+  width: 100%;
+  left: 47.1%;
+  bottom: 10px;
+  position: absolute;
+}
+.fa-instagram {
+  background: white;
+  color: black;
+  width: auto;
+}
+.fa-instagram:hover {
+  background: black;
+  color: white;
+}
