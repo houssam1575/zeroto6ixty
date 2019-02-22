@@ -1,3 +1,5 @@
+//jshint esversion:6
+
 const express = require('express');
 const app = express();
 const bp = require('body-parser');
@@ -15,4 +17,9 @@ app.use('/css/', express.static("./css/"));
 app.get("/", function(req, res) {
   res.render("welcome");
   console.log("redirected to /index.ejs");
+});
+
+app.post("/", function(req, res) {
+  res.render("gallery");
+  console.log("redirected to /gallery.ejs");
 });
