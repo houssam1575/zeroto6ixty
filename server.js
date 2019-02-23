@@ -13,9 +13,9 @@ app.use(bp.urlencoded({
   extended: true
 }));
 
-const privateKey = fs.readFileSync('ssl/letsencrypt/live/www.zeroto6ixty.com/privkey.pem', 'utf8');
-const certificate = fs.readFileSync('ssl/letsencrypt/live/www.zeroto6ixty.com/cert.pem', 'utf8');
-const ca = fs.readFileSync('ssl/letsencrypt/live/www.zeroto6ixty.com/chain.pem', 'utf8');
+const privateKey = fs.readFileSync('SSL/letsencrypt/live/www.zeroto6ixty.com/privkey.pem', 'utf8');
+const certificate = fs.readFileSync('SSL/letsencrypt/live/www.zeroto6ixty.com/cert.pem', 'utf8');
+const ca = fs.readFileSync('SSL/letsencrypt/live/www.zeroto6ixty.com/chain.pem', 'utf8');
 
 
 const credentials = {
