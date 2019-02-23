@@ -4,23 +4,24 @@ const express = require('express');
 const app = express();
 const bp = require('body-parser');
 const ejs = require('ejs');
+
+
 var galleryTitles = [];
+app.use(bp.urlencoded({
+  extended: true
+}));
+
 
 var fs = require('fs');
 var obj;
 fs.readFile('json/ALBUMS.json', 'utf8', function(err, data) {
   if (err) throw err;
   var obj = JSON.parse(data);
-  for(var x in obj.album){
+  for (var x in obj.album) {
     galleryTitles.push(x);
     console.log("Adding: " + x);
   }
 });
-
-
-
-
-
 app.set('view engine', 'ejs');
 app.use(bp.urlencoded({
   extended: true
@@ -36,9 +37,9 @@ app.get("/", function(req, res) {
   console.log("redirected to /index.ejs");
 });
 
-app.post("/", function(req, res) {
+app.post("/gallery", function(req, res) {
   res.render("gallery", {
-    newListItems: galleryTitles
+    newListItems: galleryTitles,
   });
   console.log("redirected to /gallery.ejs");
 });
