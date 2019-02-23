@@ -1,0 +1,19 @@
+{
+  "album": {
+    "Japan": {
+      "thumbnail": "link 1",
+      "image 1": "link 2",
+      "image 2": "link 3"
+    },
+    "Car": {
+      "thumbnail": "link 1",
+      "image 1": "link 2",
+      "image 2": "link 3"
+    },
+    "Flower": {
+      "thumbnail": "link 1",
+      "image 1": "link 2",
+      "image 2": "link 3"
+    }
+  }
+}

@@ -15,12 +15,13 @@
 <ul>
   <% for(var i=0; i<newListItems.length; i++) { %>
   <% var iNo = i + 1; %>
-  <div class="square img_1-<%= iNo %>">
-    <h2>
-      <%= newListItems[i] %>
-    </h2>
-  </div>
-
+  <a href="">
+    <div class="square img_1-<%= iNo %>">
+      <h2>
+        <%= newListItems[i] %>
+      </h2>
+    </div>
+  </a>
   <% } %>
 
 </ul>

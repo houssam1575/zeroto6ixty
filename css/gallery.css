@@ -15,7 +15,7 @@
 
 .square {
   float: left;
-  position: relative;
+  position: inherit;
   width: 30%;
   padding-bottom: 30%;
   /* = width for a 1:1 aspect ratio */
@@ -23,8 +23,12 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: contain;
+  transition: transform .2s;
   ;
   /* you change this to "contain" if you don't want the images to be cropped */
+}
+.square:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 
 body {
