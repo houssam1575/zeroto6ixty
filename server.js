@@ -32,6 +32,7 @@ app.listen(process.env.PORT || 3000, function() {
 });
 app.use('/assets/', express.static("./assets/"));
 app.use('/css/', express.static("./css/"));
+app.use(express.static(__dirname, { dotfiles: 'allow' } ));
 app.get("/", function(req, res) {
   res.render("welcome");
   console.log("redirected to /index.ejs");
