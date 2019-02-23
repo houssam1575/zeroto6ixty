@@ -28,11 +28,11 @@ const credentials = {
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
 
-httpServer.listen(3000, () => {
+httpServer.listen(process.env.PORT || 3000, () => {
 	console.log('HTTP Server running on port 3000');
 });
 
-httpsServer.listen(443, () => {
+httpsServer.listen(process.env.PORT || 443, () => {
 	console.log('HTTPS Server running on port 443');
 });
 app.use('/assets/', express.static("./assets/"));
