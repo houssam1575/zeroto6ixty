@@ -13,6 +13,7 @@ fs.readFile('json/ALBUMS.json', 'utf8', function(err, data) {
   var obj = JSON.parse(data);
   for(var x in obj.album){
     galleryTitles.push(x);
+    console.log("Adding: " + x);
   }
 });
 

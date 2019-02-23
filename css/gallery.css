@@ -69,3 +69,9 @@ body {
   background: #ECECEC;
   border: 1px solid #fff;
 }
+a {
+  color: black;
+}
+a:hover {
+  color: black;
+}
