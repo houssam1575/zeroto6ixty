@@ -27,6 +27,17 @@ const credentials = {
 // Starting both http & https servers
 const httpServer = http.createServer(app);
 const httpsServer = https.createServer(credentials, app);
+
+httpServer.listen(3000, () => {
+	console.log('HTTP Server running on port 3000');
+});
+
+httpsServer.listen(443, () => {
+	console.log('HTTPS Server running on port 443');
+});
+app.use('/assets/', express.static("./assets/"));
+app.use('/css/', express.static("./css/"));
+
 var obj;
 fs.readFile('json/ALBUMS.json', 'utf8', function(err, data) {
   if (err) throw err;
@@ -41,15 +52,6 @@ app.use(bp.urlencoded({
   extended: true
 }));
 
-httpServer.listen(80, () => {
-	console.log('HTTP Server running on port 80');
-});
-
-httpsServer.listen(443, () => {
-	console.log('HTTPS Server running on port 443');
-});
-app.use('/assets/', express.static("./assets/"));
-app.use('/css/', express.static("./css/"));
 app.get("/", function(req, res) {
   res.render("welcome");
   console.log("redirected to /index.ejs");
