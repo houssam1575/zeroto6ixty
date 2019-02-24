@@ -10,20 +10,21 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Gallery</title>
+  <title>
+    <%= albumTitle %>
+  </title>
 </head>
-  <ul>
-    <% for(var i=0; i<newListItems.length; i++) { %>
-    <% var iNo = i + 1; %>
-    <form action="<%= newListItems[i] %>" method="post">
-      <a href="/:user/<%= newListItems[i] %>">
-        <div class="square img_1-<%= iNo %>">
-          <h2>
-            <%= newListItems[i] %>
-          </h2>
-        </div>
-      </a>
-    </form>
-    <% } %>
-</ul>
+
+<body>
+  <h2><%= albumTitle %></h2>
+  <% for(var i=0; i<imageLinks.length; i++) { %>
+  <% var iNo = i + 1; %>
+  <div class="square img_1-<%= iNo %>">
+    <h2>
+      <%= imageLinks[i] %>
+    </h2>
+  </div>
+  <% } %>
+</body>
+
 </html>

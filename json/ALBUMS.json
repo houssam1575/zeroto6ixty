@@ -1,19 +1,19 @@
 {
   "album": {
     "Japan": {
-      "thumbnail": "link 1",
-      "image 1": "link 2",
-      "image 2": "link 3"
+      "link 1": "http",
+      "link 2": "https",
+      "link 3": "http"
     },
     "Car": {
-      "thumbnail": "link 1",
-      "image 1": "link 2",
-      "image 2": "link 3"
+      "link 1": "link 1",
+      "link 2": "link 2",
+      "link 3": "link 3"
     },
     "Flower": {
-      "thumbnail": "link 1",
-      "image 1": "link 2",
-      "image 2": "link 3"
+      "link 1": "link 1",
+      "link 2": "link 2",
+      "link 3": "link 3"
     }
   }
 }
