@@ -44,6 +44,8 @@ app.post("/gallery", function(req, res) {
   });
   console.log("redirected to /gallery.ejs");
 });
+
+//Page iteration of images
 app.get('/:user/:token', function(req, res) {
   albumName = req.params.token;
   console.log("User is requesting: " + albumName);
