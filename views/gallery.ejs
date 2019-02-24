@@ -12,10 +12,8 @@
   <meta charset="utf-8">
   <title>Gallery</title>
 </head>
-  <ul>
     <% for(var i=0; i<newListItems.length; i++) { %>
     <% var iNo = i + 1; %>
-    <form action="<%= newListItems[i] %>" method="post">
       <a href="/:user/<%= newListItems[i] %>">
         <div class="square img_1-<%= iNo %>">
           <h2>
@@ -23,7 +21,5 @@
           </h2>
         </div>
       </a>
-    </form>
     <% } %>
-</ul>
 </html>
