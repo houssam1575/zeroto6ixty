@@ -5,13 +5,21 @@
 <!-- CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <link rel="stylesheet" href="../css/styles.css"> -->
-<link rel="stylesheet" href=../css/bootstrap.css> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href=../css/bootstrap.css>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/gallery.css">
 
 <head>
   <meta charset="utf-8">
   <title>Gallery</title>
 </head>
+<body>
+  <nav class="navbar navbar-expand-md bg-light navbar-light">
+    <a class="navbar-brand">Gallery</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
     <% for(var i=0; i<newListItems.length; i++) { %>
     <% var iNo = i + 1; %>
       <a href="/:user/<%= newListItems[i] %>">
@@ -22,4 +30,5 @@
         </div>
       </a>
     <% } %>
+</body>
 </html>

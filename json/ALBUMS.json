@@ -1,19 +1,19 @@
 {
   "album": {
     "Japan": {
-      "link 1": "http",
-      "link 2": "https",
-      "link 3": "http"
+      "Japan 1": "http",
+      "Japan 2": "https",
+      "Japan 3": "http"
     },
     "Cars": {
-      "link 1": "link 1",
-      "link 2": "link 2",
-      "link 3": "link 3"
+      "Cars 1": "link 1",
+      "Cars 2": "link 2",
+      "Cars 3": "link 3"
     },
     "Portraits": {
-      "link 1": "link 1",
-      "link 2": "link 2",
-      "link 3": "link 3"
+      "Portraits 1": "link 1",
+      "Portraits 2": "link 2",
+      "Portraits 3": "link 3"
     }
   }
 }
