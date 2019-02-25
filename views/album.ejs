@@ -7,8 +7,7 @@
 <!-- <link rel="stylesheet" href="../css/styles.css"> -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/gallery.css">
-<link rel="stylesheet" href=/css/bootstrap.css>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href=/css/bootstrap.css> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="/css/gallery.css">
 
 <head>
@@ -20,13 +19,22 @@
     function submitForm() {
       document.getElementById('<%= albumTitle %>Form').submit();
     }
-</script>
+  </script>
+  <style>
+    <% for(var i=0; i<albumLinks.length; i++) { %>
+  <% var iNo = i + 1; %>
+    .img_1-<%= iNo %> {
+      background-image: url('<%= albumLinks[i] %>');
+      }
+  <% } %>
+</style>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-md bg-light navbar-light">
     <form class="" method="post" action="/gallery" id="<%= albumTitle %>Form">
-    <a class="navbar-brand" onclick="submitForm()"><%= albumTitle %></a>
+      <a class="navbar-brand" onclick="submitForm()">
+        <%= albumTitle %></a>
     </form>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
       <span class="navbar-toggler-icon"></span>

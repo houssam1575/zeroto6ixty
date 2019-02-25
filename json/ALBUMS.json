@@ -1,19 +1,19 @@
 {
   "album": {
     "Japan": {
-      "Japan 1": "http",
-      "Japan 2": "https",
-      "Japan 3": "http"
+      "Japan0": "https://i.imgur.com/HZCUU2u.jpg",
+      "Japan1": "https",
+      "Japan2": "http"
     },
     "Cars": {
-      "Cars 1": "link 1",
-      "Cars 2": "link 2",
-      "Cars 3": "link 3"
+      "Cars0": "carlink1",
+      "Cars1": "carlink2",
+      "Cars2": "carlink3"
     },
     "Portraits": {
-      "Portraits 1": "link 1",
-      "Portraits 2": "link 2",
-      "Portraits 3": "link 3"
+      "Portraits0": "https://i.imgur.com/eBbJr4W.jpg",
+      "Portraits1": "link 2",
+      "Portraits2": "link 3"
     }
   }
 }

@@ -70,30 +70,36 @@ app.get('/:user/:token', function(req, res) {
     var count = 0;
     if (obj.album[token] === undefined || obj.album[token].length === 0) {
       console.log("data is undefined, album won't load");
-      console.log(obj.album[token]);
     } else {
       var imageLinks = [];
+      var albumLinks = [];
       console.log(imageLinks);
       console.log("Populating album for: " + token);
+      //This pushes the names of the albums, etc japan
       for (var x in obj.album[token]) {
         imageLinks.push(x);
-        count++;
       }
-      if (count === 0) {
-        console.log("Error: could not populate album!");
-      } else {
+      var iterateAmount = 0;
+      //this pushes the links that are stored into the album
+      for(var i = 0; i < obj.album[token][token + "0"].length -1; i++) {
+        albumLinks.push(obj.album[token][token + iterateAmount]);
+        iterateAmount++;
+        console.log(iterateAmount);
+      }
+        console.log(albumLinks);
         newImageArray = imageLinks;
-        console.log("Finished populating");
-        console.log(imageLinks);
+        newAlbumLinks = albumLinks;
+        console.log("Population completed");
         app.get('/album', function(req, res) {
           res.render("album", {
             albumTitle: albumName,
-            imageLinks: newImageArray
+            imageLinks: newImageArray,
+            albumLinks: newAlbumLinks
           });
           console.log("redirected to " + albumName + " album");
           console.log("Array passed into " + albumName + ": " + newImageArray);
+          console.log("Array links passed into " + albumName + ": " + newAlbumLinks);
         });
-      }
     }
   }
 });

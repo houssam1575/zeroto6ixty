@@ -1,17 +1,7 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:400,900);
 
 /* <-- Just for the demo, Yes I like pretty fonts... */
-.img_1-1 {
-  background-image: url('https://i.imgur.com/HZCUU2u.jpg');
-}
 
-.img_1-2 {
-  background-image: url('https://lh3.googleusercontent.com/zZu7dADerIWGKi-8tcd5LoU_o2OvxWBzTyWZ9xTDchwKNKxbU3hkRMZpSqIDfn_r5cI5k29gaJgHUq2nh7VsCqviOnGCCjKZbcwhnEhCui4ps4-_q-oP7Wf7L4SDA2otoVFfhK6MViZSkY0rjLRkSCMXqYBnuVQPBK56TORL3kp2s6m2aR2ttb6dacwoR1bI4gBRbJ2Yqm82WhUozmOMDOy5tOHC-8YpxO8tb3400F7IJ97f5XOq25b_ZPhllDxcr0YwEpW2DgLm1Y2RJpN1vc5_l2onUnBzp3mp_2jynLNkw-mc-2diG-LTs86DrZaHpDP4yNsoTOHNUqQw3tznE7TXF7ssbI9A93ijMZxswAuqfw9j-t4wfYC8DSULAFgyFfB0RAlHa9si-9Sd476hnxeWdR7uzPd1w57dmTT5guJQLyuONbvXl-msopEfc73P2cNA0_aYbFhxQW3Ry6VoQZLsXcQPMYAB4q5x_jPuEYzMEoJdERWptULCKnh9ulTRWyh13TIombFvWv8RVrz7jpD6KzWMJeZnHPojju7puJTZLI56H9TZek-piq0WcLB981BcwqHFCDn4SLlt2g-iHaF7UaZMfacr6iKQ9NIq6Q3hYGK4BRj-O6-ZSDWtm-zRMYW-ayL0aNXSuku9CteNxwRm7qxNzNJP=w3060-h2042-no');
-}
-
-.img_1-3 {
-  background-image: url('https://i.imgur.com/eBbJr4W.jpg');
-}
 
 .square {
   float: left;
