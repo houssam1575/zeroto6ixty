@@ -2,11 +2,14 @@
   "album": {
     "Japan": {
       "Japan0": "https://i.imgur.com/HZCUU2u.jpg",
-      "Japan1": "https",
-      "Japan2": "http"
+      "Japan1": "https://i.imgur.com/zhpq4gI.jpg",
+      "Japan2": "https://i.imgur.com/b4U6TeI.jpg",
+      "Japan3": "https://i.imgur.com/zRXiPH2.jpg",
+      "Japan4": "https://i.imgur.com/vwafAhi.jpg",
+      "Japan5": "https://i.imgur.com/mJgSCKe.jpg"
     },
     "Cars": {
-      "Cars0": "carlink1",
+      "Cars0": "https://i.imgur.com/OZwBSQ2.jpg",
       "Cars1": "carlink2",
       "Cars2": "carlink3"
     },
@@ -14,6 +17,26 @@
       "Portraits0": "https://i.imgur.com/eBbJr4W.jpg",
       "Portraits1": "link 2",
       "Portraits2": "link 3"
+    }
+  },
+  "description": {
+    "descriptionJapan": {
+      "Japan0": "Kinkaku-ji, Kyoto, Japan",
+      "Japan1": "Tokyo Imperial Palace",
+      "Japan2": "Kyoto",
+      "Japan3": "https://i.imgur.com/zRXiPH2.jpg",
+      "Japan4": "https://i.imgur.com/vwafAhi.jpg",
+      "Japan5": "https://i.imgur.com/mJgSCKe.jpg"
+    },
+    "descriptionCars": {
+      "Cars0": "Toyota Crown, Odaiba, Japan",
+      "Cars1": "carlink2",
+      "Cars2": "carlink3"
+    },
+    "descriptionPortraits": {
+      "Portraits0": "Sigma ART 35mm f1.4",
+      "Portraits1": "Kinkaku-ji, Kyoto, Japan",
+      "Portraits2": "Kinkaku-ji, Kyoto, Japan"
     }
   }
 }
