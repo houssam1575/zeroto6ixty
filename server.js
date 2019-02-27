@@ -8,7 +8,7 @@ const fs = require('fs');
 const http = require('http');
 const https = require('https');
 var galleryTitles = [];
-
+var thumbnails = [];
 
 app.use(bp.urlencoded({
   extended: true
@@ -20,6 +20,11 @@ fs.readFile('json/ALBUMS.json', 'utf8', function(err, data) {
   for (var x in obj.album) {
     galleryTitles.push(x);
     console.log("Adding: " + x);
+  }
+  for(var t = 0; t < galleryTitles.length; t++) {
+    var toString = galleryTitles[t].toString() +0;
+    thumbnails.push(obj.album[galleryTitles[t]][toString]);
+
   }
 });
 
@@ -48,6 +53,7 @@ app.get("/", function(req, res) {
 app.post("/gallery", function(req, res) {
   res.render("gallery", {
     newListItems: galleryTitles,
+    thumbnails: thumbnails
   });
   console.log("redirected to /gallery.ejs");
 });
@@ -72,12 +78,12 @@ app.get('/:user/:token', function(req, res) {
 
   function populateAlbumFile(token) {
     var count = 0;
+    var albumLinks = [];
 
     if (obj.album[token] === undefined || obj.album[token].length === 0) {
       console.log("data is undefined, album won't load");
     } else {
       var imageLinks = [];
-      var albumLinks = [];
       var galleryTitlesDescription = [];
 
       console.log(imageLinks);
@@ -94,6 +100,7 @@ app.get('/:user/:token', function(req, res) {
       //this pushes the links that are stored into the album
       for (var i = 0; i < obj.album[token][token + "0"].length - 1; i++) {
         albumLinks.push(obj.album[token][token + iterateAmount]);
+        thumbnails.push(obj.album[token][token + "0"]);
         iterateAmount++;
       }
 
@@ -101,13 +108,15 @@ app.get('/:user/:token', function(req, res) {
       var counter = 0;
 
       console.log("Trying to populate descriptions...");
-      console.log("Array length" + obj.description["description" + token][token + counter].length);
-      galleryTitlesDescription = [];
 
-      for (var j = 0; i < obj.description["description" + token][token + "0"].length; j++); {
+      galleryTitlesDescription = [];
+      var arrayLength = obj.description["description" + token][token + "0"].length;
+      console.log("Array length: " + arrayLength);
+      for (var j = 0; j < arrayLength; j++); {
         galleryTitlesDescription.push(obj.description["description" + token][token + counter]);
         console.log("Adding to galleryTitlesDescription: " + obj.description["description" + token][token + counter]);
         counter++;
+        console.log(counter);
       }
 
       //This posts the data to album.EJS

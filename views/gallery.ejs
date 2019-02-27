@@ -12,6 +12,15 @@
 <head>
   <meta charset="utf-8">
   <title>Gallery</title>
+
+  <style>
+    <% for(var i=0; i<thumbnails.length; i++) { %>
+  <% var iNo = i + 1; %>
+    .img_1-<%= iNo %> {
+      background-image: url('<%= thumbnails[i] %>');
+      }
+  <% } %>
+</style>
 </head>
 <body>
   <nav class="navbar navbar-expand-md bg-light navbar-light">
