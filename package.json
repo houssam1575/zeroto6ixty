@@ -12,6 +12,7 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.4",
-    "node-html-parser": "^1.1.12"
+    "node-html-parser": "^1.1.12",
+    "request": "^2.88.0"
   }
 }

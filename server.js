@@ -7,12 +7,16 @@ const ejs = require('ejs');
 const fs = require('fs');
 const http = require('http');
 const https = require('https');
+const request = require('request');
 var galleryTitles = [];
 var thumbnails = [];
+var url = 'http://api.jsonbin.io/b/5c767a197b87381f6bfb91af';
+
 
 app.use(bp.urlencoded({
   extended: true
 }));
+
 //This reads ALBUMS.json, if you want to add more pictures/albums, use ALBUMS.json to add
 fs.readFile('json/ALBUMS.json', 'utf8', function(err, data) {
   if (err) throw err;
