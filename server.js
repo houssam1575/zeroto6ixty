@@ -51,7 +51,7 @@ app.use('/css/', express.static("./css/"));
 //Express redirection
 app.get("/", function(req, res) {
   res.render("welcome");
-  console.log("redirected to /index.ejs");
+  console.log("redirected to /welcome.ejs");
 });
 
 app.post("/gallery", function(req, res) {
