@@ -29,15 +29,22 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   </nav>
-    <% for(var i=0; i<newListItems.length; i++) { %>
-    <% var iNo = i + 1; %>
-      <a href="/:user/<%= newListItems[i] %>">
-        <div class="square img_1-<%= iNo %>">
-          <h5>
-            <%= newListItems[i] %>
-          </h5>
+  <div class="child-page-listing">
+    <div class="grid-container">
+      <% for(var i=0; i<newListItems.length; i++) { %>
+      <% var iNo = i + 1; %>
+      <article id=1 class="location-listing">
+        <a class="location-title" href="/:user/<%= newListItems[i] %>">
+        <%= newListItems[i] %>
+        </a>
+        <div class="location-image">
+          <a href=#>
+            <img width="300" height="169" src="<%= thumbnails[i] %>" alt="">
+          </a>
         </div>
-      </a>
-    <% } %>
+      </article>
+      <% } %>
+    </div>
+  </div>
 </body>
 </html>

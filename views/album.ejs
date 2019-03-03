@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="../css/gallery.css">
 <link rel="stylesheet" href=/css/bootstrap.css> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="/css/gallery.css">
+<link rel="stylesheet" href="/css/album.css">
 
 <head>
   <meta charset="utf-8">
@@ -40,12 +40,14 @@
       <span class="navbar-toggler-icon"></span>
     </button>
   </nav>
-  <%= console.log("array being used: " + imageLinks) %>
-  <% for(var i=0; i<imageLinks.length; i++) { %>
-  <% var iNo = i + 1; %>
-  <div class="square img_1-<%= iNo %>">
-  </div>
-  <% } %>
+  <header>
+    <%= console.log("array being used: " + imageLinks) %>
+    <% for(var i=0; i<imageLinks.length; i++) { %>
+    <% var iNo = i + 1; %>
+      <div><img src="<%= albumLinks[i] %>" alt></div>
+    <% } %>
+  </header>
+
 </body>
 
 </html>
