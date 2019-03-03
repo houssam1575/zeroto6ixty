@@ -16,7 +16,13 @@ h2 {
   grid-gap: 1em;
 }
 
-
+a {
+  color: white;
+}
+a:hover {
+  color: white;
+  text-decoration: none;
+}
 /* hover styles */
 .location-listing {
   position: relative;
