@@ -62,6 +62,10 @@ app.post("/gallery", function(req, res) {
   console.log("redirected to /gallery.ejs");
 });
 
+app.post("/aboutme", function(req, res) {
+  res.render("aboutme");
+});
+
 //Page iteration of images
 app.get('/:user/:token', function(req, res) {
   albumName = req.params.token;
