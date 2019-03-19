@@ -2,20 +2,10 @@
 
 const express = require('express');
 const app = express();
-const bp = require('body-parser');
 const ejs = require('ejs');
 const fs = require('fs');
-const http = require('http');
-const https = require('https');
-const request = require('request');
 var galleryTitles = [];
 var thumbnails = [];
-var url = 'http://api.jsonbin.io/b/5c767a197b87381f6bfb91af';
-
-
-app.use(bp.urlencoded({
-  extended: true
-}));
 
 //This reads ALBUMS.json, if you want to add more pictures/albums, use ALBUMS.json to add
 fs.readFile('json/ALBUMS.json', 'utf8', function(err, data) {
@@ -34,9 +24,6 @@ fs.readFile('json/ALBUMS.json', 'utf8', function(err, data) {
 
 //This sets the view engine as EJS
 app.set('view engine', 'ejs');
-app.use(bp.urlencoded({
-  extended: true
-}));
 
 //SERVER CONFIGURATION
 app.listen(process.env.PORT || 3000, function() {
