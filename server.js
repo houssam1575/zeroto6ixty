@@ -4,6 +4,7 @@ const express = require('express');
 const app = express();
 const ejs = require('ejs');
 const fs = require('fs');
+
 var galleryTitles = [];
 var thumbnails = [];
 
